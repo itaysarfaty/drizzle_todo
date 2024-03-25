@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev-db": "turso dev --db-file dev.db",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "turso-dev": "turso dev --db-file dev.db",
     "generate": "drizzle-kit generate:sqlite",
     "push": "drizzle-kit push:sqlite"
   },
