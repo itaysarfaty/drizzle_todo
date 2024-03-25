@@ -3,13 +3,14 @@ import { TodoList } from "@/components/TodoList";
 
 export default function Home() {
   return (
-    <main>
-      <section>
-        <h1>Things I should do</h1>
-        <h2>And definitely not forget about</h2>
-        <TodoInput />
+    <div className="w-screen h-screen grid place-items-center">
+      <main className="max-w-[500px] w-full border-2 border-gray-400 rounded-lg p-4">
+        <header className="mb-3">
+          <h1 className="text-2xl font-bold mb-2">Todos</h1>
+          <TodoInput />
+        </header>
         <TodoList />
-      </section>
-    </main>
+      </main>
+    </div>
   );
 }
