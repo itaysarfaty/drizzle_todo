@@ -7,7 +7,7 @@ import { revalidateTag } from "next/cache";
 
 export async function addItem(
   prevState: { formKey: number; error: string | null },
-  data: FormData
+  data: FormData,
 ) {
   "use server";
 

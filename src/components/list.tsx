@@ -1,8 +1,8 @@
 import { db } from "@/db";
-import { Item } from "./item";
 import { todos } from "@/db/schema";
 import { getErrorMessage } from "@/lib/utils";
 import { unstable_cache as cache } from "next/cache";
+import { Item } from "./item";
 
 const getTodos = async () => {
   "use server";
@@ -20,7 +20,7 @@ export const List = async () => {
   const todos = await cachedGetTodos();
 
   if ("error" in todos) {
-    return <p className="text-red-500 text-sm">{todos.error}</p>;
+    return <p className="text-sm text-red-500">{todos.error}</p>;
   }
 
   return (

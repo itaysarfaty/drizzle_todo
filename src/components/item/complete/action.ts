@@ -8,7 +8,7 @@ import { revalidateTag } from "next/cache";
 
 export async function deleteItem(
   prevState: { id: number; error: null | string },
-  data: FormData
+  data: FormData,
 ) {
   try {
     await delay();
