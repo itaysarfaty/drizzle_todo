@@ -1,6 +1,56 @@
-Technologies
+# Drizzle Todo
 
-- Next.js 14
-- Drizzle ORM
-- Turso (libSQL)
--
+This is a simple Todo application built with Next.js, Drizzle ORM, and Turso (libSQL).
+
+## Technologies
+
+-   Next.js 14
+-   Drizzle ORM
+-   Turso (libSQL)
+-   React 18
+-   TypeScript 5
+
+## Getting Started
+
+First, install the dependencies:
+
+```sh
+npm install
+```
+
+Then, you can start the development server:
+
+```sh
+npm run dev
+```
+
+And in another terminal, start the development database:
+
+```sh
+npm run dev-db
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Building
+
+To build the application for production, run:
+
+```sh
+npm run build
+```
+
+Then, to start the application:
+
+```sh
+npm run start
+```
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
