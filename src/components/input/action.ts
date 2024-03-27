@@ -3,6 +3,7 @@
 import { db } from "@/db";
 import { todos } from "@/db/schema";
 import { delay, getErrorMessage } from "@/lib/utils";
+import { revalidateTag } from "next/cache";
 
 export async function addItem(
   prevState: { formKey: number; error: string | null },
@@ -24,6 +25,7 @@ export async function addItem(
       description,
     });
 
+    revalidateTag("todos");
     return { error: null, formKey: prevState.formKey + 1 };
   } catch (error) {
     const message = getErrorMessage(error);
