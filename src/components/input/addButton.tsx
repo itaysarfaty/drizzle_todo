@@ -9,6 +9,7 @@ export const AddButton = () => {
         <button
             type="submit"
             disabled={pending}
+            aria-label="Submit todo"
             className="grid w-16 place-items-center rounded-md bg-gray-900 py-1 text-sm text-white"
         >
             {pending ? (

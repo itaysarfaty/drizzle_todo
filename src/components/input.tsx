@@ -16,10 +16,16 @@ export const Input = () => {
                     name="description"
                     placeholder="Add a todo..."
                     className="flex-1 rounded-md border border-gray-300 px-2 py-2 text-sm focus:border-gray-400 focus:outline-none"
+                    aria-label="Enter a todo"
+                    aria-describedby="todo-error"
                 />
                 <AddButton />
             </div>
-            {error && <p className="mt-2 text-xs text-red-500">{error}</p>}
+            {error && (
+                <p id="todo-error" className="mt-2 text-xs text-red-500">
+                    {error}
+                </p>
+            )}
         </form>
     )
 }
