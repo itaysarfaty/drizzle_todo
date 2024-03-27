@@ -18,6 +18,7 @@ export const Input = () => {
                     className="flex-1 rounded-md border border-gray-300 px-2 py-2 text-sm focus:border-gray-400 focus:outline-none"
                     aria-label="Enter a todo"
                     aria-describedby="todo-error"
+                    autoComplete="off"
                 />
                 <AddButton />
             </div>
