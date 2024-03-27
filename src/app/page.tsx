@@ -1,15 +1,16 @@
-import { TodoInput } from "@/components/TodoInput";
-import { TodoList } from "@/components/TodoList";
+import { Input } from "@/components/input";
+import { List } from "@/components/list";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen grid place-items-center">
-      <main className="max-w-[500px] w-full border-2 border-gray-400 rounded-lg p-4">
-        <header className="mb-3">
+    <div className="w-screen h-screen flex justify-center items-center p-5">
+      <main className="max-w-[500px] w-full border-2 border-gray-300 rounded-lg p-4">
+        <header>
           <h1 className="text-2xl font-bold mb-2">Todos</h1>
-          <TodoInput />
+          <Input />
         </header>
-        <TodoList />
+        <hr className="my-4" />
+        <List />
       </main>
     </div>
   );

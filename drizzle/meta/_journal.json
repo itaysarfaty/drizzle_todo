@@ -1,1 +1,13 @@
-{"version":"5","dialect":"sqlite","entries":[]}
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1711494811770,
+      "tag": "0000_freezing_lady_vermin",
+      "breakpoints": true
+    }
+  ]
+}
