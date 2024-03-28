@@ -1,5 +1,6 @@
-# Drizzle Todo
+![ScreenRecording2024-03-27at10 01 01PM-ezgif com-video-to-gif-converter](https://github.com/itaysarfaty/drizzle_todo/assets/46969951/79edc0b1-f9d5-48c6-86d6-5c86f9bfd17c)
 
+# Drizzle Todo
 This is a simple Todo application built with Next.js, Drizzle ORM, and Turso (libSQL).
 
 ## Technologies
