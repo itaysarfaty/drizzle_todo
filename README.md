@@ -11,6 +11,12 @@ This is a simple Todo application built with Next.js, Drizzle ORM, and Turso (li
 -   React 18
 -   TypeScript 5
 
+## Notes
+
+-  Folder structure is using a fractal pattern
+-  Adhere to progressive enhancement principles
+  
+
 ## Getting Started
 
 First, install the dependencies:
@@ -32,20 +38,6 @@ npm run dev-db
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Building
-
-To build the application for production, run:
-
-```sh
-npm run build
-```
-
-Then, to start the application:
-
-```sh
-npm run start
-```
 
 
 ## Contributing
