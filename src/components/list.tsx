@@ -18,11 +18,12 @@ const cachedGetTodos = cache(getTodos, ['todos'], { tags: ['todos'] })
 
 export const List = async () => {
     const todos = await cachedGetTodos()
-
     if ('error' in todos) {
         return <p className="text-sm text-red-500">{todos.error}</p>
     }
-
+    if (todos.length === 0) {
+        return <p className="text-sm text-gray-500">None found</p>
+    }
     return (
         <ul className="flex flex-col  gap-3">
             {todos.map((todo) => (
