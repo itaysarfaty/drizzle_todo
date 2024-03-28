@@ -1,7 +1,7 @@
 'use client'
 
 import { addItem } from './input/action'
-import { AddButton } from './input/addButton'
+import { AddButton } from './input/button'
 import { useFormState } from 'react-dom'
 
 const initialState = { error: null, formKey: 0 }
